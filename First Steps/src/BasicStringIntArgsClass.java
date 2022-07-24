@@ -1,4 +1,5 @@
 import java.lang.*;
+import java.unit.List;
 
 // https://stackoverflow.com/questions/11973505/what-is-the-difference-between-string-and-string-in-java
 public class BasicStringIntArgsClass {
@@ -17,6 +18,7 @@ public class BasicStringIntArgsClass {
         System.out.println(sv3);
     }
 
+    // Integer.MAX_VALUE=2147483647, MIN_VALUE=-2147483647
     static void intMethodArgs(int... args) {
         int intv1 = args[0];
         int intv2 = args[1];
@@ -24,10 +26,16 @@ public class BasicStringIntArgsClass {
         System.out.println("Total of those ints is = " + Integer.sum(intv1, intv2));
     }
 
+    // interface
+    // collection ---> list {}
+    // collection ---> set {}
+    //
     public static void main (String[] args) {
         // using escape character to avoid double quotes error
         stringMethodArgs("\"apple\"", "banana", "cherry");
         intMethodArgs(3, 7, 9);
-        StringArrayClass(new String[]{ "John", "Doe"});
+        // StringArrayClass(new String[]{"John", "Doe"});
+        List <String> slist = new ArrayList <> ();
+        StringArrayClass(new String[]{"John", "Doe"});
      }
 }
