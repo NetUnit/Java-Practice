@@ -1,5 +1,5 @@
-import java.lang.*;
-import java.unit.List;
+import java.util.ArrayList;
+import java.util.List;
 
 // https://stackoverflow.com/questions/11973505/what-is-the-difference-between-string-and-string-in-java
 public class BasicStringIntArgsClass {
@@ -29,7 +29,7 @@ public class BasicStringIntArgsClass {
     // interface
     // collection ---> list {}
     // collection ---> set {}
-    //
+
     public static void main (String[] args) {
         // using escape character to avoid double quotes error
         stringMethodArgs("\"apple\"", "banana", "cherry");

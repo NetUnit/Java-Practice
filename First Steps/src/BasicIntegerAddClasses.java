@@ -1,4 +1,4 @@
-public class BasicIntegerClasses {
+public class BasicIntegerAddClasses {
 
     // adding values in sequence - void is excessive
     static int AddingValues(int... args) {
@@ -14,6 +14,7 @@ public class BasicIntegerClasses {
         // System.out.println(start);
         return start;
     }
+
 
     public static void main (String[] args) {
         int result = AddingValues(1, 2, 3, 4, 5);
