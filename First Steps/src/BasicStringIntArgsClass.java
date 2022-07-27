@@ -4,6 +4,8 @@ import java.util.List;
 // https://stackoverflow.com/questions/11973505/what-is-the-difference-between-string-and-string-in-java
 public class BasicStringIntArgsClass {
     static void stringMethodArgs (String...args) {
+        // System.out.println(args.getClass().getSimpleName());
+        // args is String[] datatype - is a sequence or string of connected characters
         String sv1 = args[0];
         String sv2 = args[1];
         String sv3 = args[2];

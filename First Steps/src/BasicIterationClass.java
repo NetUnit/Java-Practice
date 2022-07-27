@@ -1,8 +1,12 @@
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class BasicIterationClass {
     /**
      * represents several methods of iteration different (1)
      * types of data
-     * @param String[] -
+     * @param String[] -  sequence or string of connected characters
      * <p>
      * IterateString - iterates through string var (2)
      * @param  str - string data to be iterated
@@ -37,9 +41,15 @@ public class BasicIterationClass {
     }
 
     static void IterateSequenceOfInts(int... digits) {
-        System.out.println(digits);
         for (int i = 0; i < digits.length; i = i + 1) {
             System.out.println(String.format("This is int#%d: %d", i + 1, digits[i]));
+        }
+    }
+
+    static void ForEachIteration() {
+        List<Integer> Integer_list = IntStream.range(40, 50).boxed().collect(Collectors.toList());
+        for (Integer digit: Integer_list ) {
+            System.out.println(digit);
         }
     }
 
@@ -47,6 +57,7 @@ public class BasicIterationClass {
         // IterateString("Test|String");
         // IterateRange(args);
         // IterateArrayOnlyEven(args);
-        IterateSequenceOfInts(2, 4, 6, 9);
+        // IterateSequenceOfInts(2, 4, 6, 9);
+        ForEachIteration();
     }
 }
