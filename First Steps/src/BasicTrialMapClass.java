@@ -43,11 +43,11 @@ public class BasicTrialMapClass {
               * into another datatype
               * @param arr_list -  list of Integer Objects created with range
               * <p>
-              * *** construction 1 *** (1)
+              * *** construction 1 ***
               * using method reference operator (double colon (::) operator)
-              * * *** construction 2 *** (2)
+              * * *** construction 2 ***
               * using lambda expression: map( <Type of Object> -> <Object.method(arg)>
-              * *** construction 3 *** (3)
+              * *** construction 3 ***
               * using lambda expression with own function
               * map( <Type of Object> -> <own_function(arg)>
               * <p>

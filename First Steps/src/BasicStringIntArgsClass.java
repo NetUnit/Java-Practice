@@ -28,9 +28,10 @@ public class BasicStringIntArgsClass {
         System.out.println("Total of those ints is = " + Integer.sum(intv1, intv2));
     }
 
-    // interface
-    // collection ---> list {}
-    // collection ---> set {}
+    static int get_test_int(String[] int_list) {
+        System.out.println(int_list);
+        return 1;
+    }
 
     public static void main (String[] args) {
         // using escape character to avoid double quotes error
@@ -39,5 +40,6 @@ public class BasicStringIntArgsClass {
         // StringArrayClass(new String[]{"John", "Doe"});
         List <String> slist = new ArrayList <> ();
         StringArrayClass(new String[]{"John", "Doe"});
+        get_test_int(new String[]{"John", "Doe"});
      }
 }

@@ -53,11 +53,20 @@ public class BasicIterationClass {
         }
     }
 
+    static void JavaInfiniteLoop() {
+        String [] some_arr = {"3", "7", "10", "13"};
+        for (int i = some_arr.length - 1; i >= 0; i--) {
+            System.out.println(some_arr[i]);
+        }
+    }
+
     public static void main (String[] args) {
         // IterateString("Test|String");
         // IterateRange(args);
         // IterateArrayOnlyEven(args);
         // IterateSequenceOfInts(2, 4, 6, 9);
-        ForEachIteration();
+        // ForEachIteration();
+        JavaInfiniteLoop();
+
     }
 }
