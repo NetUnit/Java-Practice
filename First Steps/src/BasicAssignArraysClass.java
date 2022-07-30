@@ -67,7 +67,5 @@ public class BasicAssignArraysClass {
         // System.out.println(fruit_set);
         // >>> [banana, plum, apple, cherry, pear]
 
-
-
     }
 }
