@@ -25,10 +25,18 @@ public class BasicAssignArraysClass {
         /**
          * *** ArrayList ***
          */
-        // 1 asList
+        // 1 asList - from str values
         List<String> list2  = Arrays.asList(new String[] {"8", "10", "14", "20", "28" });
         // System.out.println(list2);
         // >> [8, 10, 14, 20, 28]
+        // 1.1 asList - from Integer values
+        List<Integer> list_int  = Arrays.asList(new Integer[] {8, 10, 14, 20, 28 });
+        // System.out.println(list_int);
+        // >> [8, 10, 14, 20, 28]
+        // 1.1 asList - from Integer values
+        ArrayList<Integer> arr_list = new ArrayList <Integer> (Arrays.asList(4, 7));
+        // System.out.println(arr_list);
+        // >> [4, 7]
 
         // 2 List.of()
         List<String> basket_w = List.of(new String[] {"potato", "beat", "carrot", "onion", "garlic"});
